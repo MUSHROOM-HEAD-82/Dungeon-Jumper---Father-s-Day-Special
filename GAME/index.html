@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dungeon Jumper - Father's Day Special</title>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #2c2c2c;
+            font-family: Arial, sans-serif;
+        }
+        canvas {
+            border: 2px solid #666;
+            background-color: #1a1a1a;
+        }
+        #gameContainer {
+            position: relative;
+        }
+        #message {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: gold;
+            font-size: 24px;
+            text-align: center;
+            display: none;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            line-height: 1.5;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <div id="gameContainer">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div id="message">
+            Happy Father's Day!<br>
+            You can redeem a Father's Day special gift!
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html> 
